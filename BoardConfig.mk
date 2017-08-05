@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/motorola/addison
+DEVICE_PATH := device/motorola/perry
 
 TARGET_RECOVERY_DEVICE_DIRS := $(DEVICE_PATH)
 
@@ -29,13 +29,10 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
-TARGET_BOARD_PLATFORM := msm8953
+TARGET_BOARD_PLATFORM := msm8917
 
-TARGET_BOOTLOADER_BOARD_NAME := MSM8953
+TARGET_BOOTLOADER_BOARD_NAME := MSM8917
 TARGET_NO_BOOTLOADER := true
-
-#TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/boot.img-zImage
-#TARGET_PREBUILT_DTB := $(DEVICE_PATH)/boot.img-dt
 
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci vmalloc=350M androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
@@ -45,7 +42,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
 KERNEL_TOOLCHAIN_PREFIX := arm-linux-androidkernel-
-TARGET_KERNEL_CONFIG := addison_defconfig
+TARGET_KERNEL_CONFIG := perry_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
 
 BOARD_USES_QCOM_HARDWARE := true
@@ -66,7 +63,7 @@ TW_INCLUDE_CRYPTO := true
 
 # TWRP
 RECOVERY_SDCARD_ON_DATA := true
-TARGET_RECOVERY_FSTAB := device/motorola/addison/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/motorola/perry/twrp.fstab
 TARGET_RECOVERY_PIXEL_FORMAT := RGB_565
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TARGET_USERIMAGES_USE_EXT4 := true
