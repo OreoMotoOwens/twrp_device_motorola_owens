@@ -3,6 +3,6 @@
     "remote":      "github",
     "repository":  "sultanqasim/android_kernel_motorola_msm8953",
     "target_path": "kernel/motorola/msm8953",
-    "revision":    "perry_twrp_hack"
+    "revision":    "twrp"
   }
 ]
