@@ -43,7 +43,7 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000
 BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
 KERNEL_TOOLCHAIN_PREFIX := arm-linux-androidkernel-
 TARGET_KERNEL_CONFIG := perry_defconfig
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
+TARGET_KERNEL_SOURCE := kernel/motorola/msm8937
 
 BOARD_USES_QCOM_HARDWARE := true
 
