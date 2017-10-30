@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-ifneq ($(filter perry, $(TARGET_DEVICE)),)
+ifneq ($(filter owens, $(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
